@@ -2,9 +2,12 @@
 #include <stdlib.h>
 #include "fstack.c"
 
+
+
 int main() {
-int i;
+float num1,num2;
+char i;
 printf("Enter an equation: \n");
-scanf("%d",&i);
-return 0;
+scanf("%f %f %c",&num1,&num2,&i);
+
 }
