@@ -2,12 +2,14 @@
 #include <stdlib.h>
 #include "fstack.c"
 
-
+float rpneval(char input[]);
 
 int main() {
-float num1,num2;
-char i;
+char input [10];
+char result;
 printf("Enter an equation: \n");
-scanf("%f %f %c",&num1,&num2,&i);
-
+fgets(input,10,stdin);
+result = rpneval(input);
+printf("result = %s", &result);
+return 0;
 }
